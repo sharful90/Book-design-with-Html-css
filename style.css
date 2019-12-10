@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container_wrapper {
+    width: 100%;
+    height: 600px;
+    padding: 60px 0px;
+    background: #ddd;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+.text_wrapper {
+    width: 40%;
+    float: left;
+    font-family: roboto;
+    text-align: center;
+    place-content: center;
+    display: grid;
+    height: 100%;
+}
+
+.text_wrapper h2 {
+    font-size: 80px;
+}
+
+.text_wrapper h3 {
+    font-size: 60px;
+    color: #f55847;
+}
+
+.text_wrapper a {
+    text-decoration: none;
+    color: white;
+    font-family: roboto;
+    background: #1abc9c;
+    width: 100px;
+    padding: 9px 0px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: auto;
+    margin-top: 23px;
+}
+
+/* ================== */
+.book_wrapper {
+    width: 51%;
+    float: right;
+}
+
+.book_cover {
+    width: 470px;
+    margin: auto;
+    height: 563px;
+    background: #271f44;
+    padding-left: 28px;
+    transform: skew(-10deg);
+    box-shadow: 10px 9px 7px 2px #818080d6;
+    position: relative;
+}
+.book {
+    width: 470px;
+    margin: auto;
+    border-left: 1px dashed #ebecee;
+    height: 563px;
+    background: #271F44;
+    z-index: 1;
+    transition:1s;
+    transform-origin: left;
+}
+
+.book img {
+    width: 470px;
+    height: 315px;
+}
+
+.b_c_text1 {
+    font-family: roboto;
+    color: white;
+    background: #271f44;
+    padding: 20px 30px;
+}
+.book h3 {
+    font-size: 46px;
+    line-height: 70px;
+}
+.book h4 {
+    font-size: 40px;
+    color: #f55847;
+}
+.b_c_text2 {
+    width: 100%;
+    padding: 33px 0px;
+    background: #271f44;
+}
+.b_c_text2 p{
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: arial;
+    text-align: center;
+    color: #f7f8f5;
+}
+.book_page {
+    position: absolute;
+    top: 0;
+    background: white;
+    z-index: -1;
+    padding: 35px;
+    height: 493px;
+} 
+.book_page h3{
+    font-family:roboto;
+    font-size:20px;
+    line-height: 36px;
+    color: #454545;
+}
+.book_page p{
+    font-family:arial;
+    text-transform:capitalize;
+    font-size: 13px;
+    color: #606060;
+    text-align:justify;
+    margin-top: 8px;
+    font-weight: 550;
+}
+.book_cover:hover .book{
+    transform: rotateY(175deg);
+}
+.book_cover:hover .b_c_text1{
+    visibility: hidden;
+}
+.book_cover:hover img{
+    visibility: hidden;
+}
+.book_cover:hover .b_c_text2{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
